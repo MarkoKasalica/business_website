@@ -103,6 +103,22 @@ p {
   max-width: 1300px;
   padding: 0 10px;
 }
+#header .nav-bar .nav-list {
+  text-decoration: none;
+}
+#header .nav-bar .nav-list ul{
+  display: flex;
+flex-direction: row;
+gap: 50px;
+
+}
+#header .nav-bar .nav-list ul li a{ 
+  text-decoration: none;
+
+
+  color: white;
+  font-size: 20px;
+}
 
 #hero {
   background-image: url(./imgs/sean-pollock-PhYq704ffdA-unsplash.jpg);
@@ -661,3 +677,13 @@ line-height: 1.6;
 
 
 /*PROJECTS END */
+#contact {
+  background-color: #88A5BD;
+}
+#contact .contact h2 {
+  font-size: 32px;
+  margin: 95px 0 80px 0;
+  border-bottom: 4px solid #5E7F9E ;
+  padding-bottom: 7px;
+  text-transform: uppercase;
+}
