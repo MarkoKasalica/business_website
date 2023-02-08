@@ -191,6 +191,8 @@ https://www.canva.com/colors/color-palette-generator/
 margin: 85px 0 50px 0;
 border-bottom: 4px solid #5E7F9E ;
 padding-bottom: 7px;
+text-transform: uppercase;
+
 }
 #services .row {
   display: flex;
@@ -306,6 +308,8 @@ padding-bottom: 7px;
 margin: 85px 0 50px 0;
 border-bottom: 4px solid #5E7F9E ;
 padding-bottom: 7px;
+text-transform: uppercase;
+
 }
 #about .column-right p {
   font-size: 15px;
@@ -367,7 +371,7 @@ h6{
     flex: 0 0 100%;
     max-width: 100%;
     margin-bottom: 80px;
-    margin-top: 40px;
+    margin-top: 70px;
     text-align: center;
 }
 #our-team .section-title h1{
@@ -399,8 +403,8 @@ h6{
     flex-wrap: wrap;
     /* max-width: 1200px; */
 
-    margin-right: -15px;
-    margin-left: -15px; 
+    /* margin-right: -15px;
+    margin-left: -15px;  */
     gap: 100px;
 }
 #our-team .column{
@@ -550,3 +554,110 @@ margin-bottom: 0;
     }
    
 }
+
+
+/* PROJECTS  */
+
+
+#projects {
+  background-color: #D4E1ED ;
+}
+
+#projects .projects h2 {
+  font-size: 32px;
+  margin: 95px 0 80px 0;
+  border-bottom: 4px solid #5E7F9E ;
+  padding-bottom: 7px;
+  text-transform: uppercase;
+}
+
+
+#projects .row {
+
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+
+gap: 100px; 
+margin-bottom: 50px;
+}
+#projects .column{
+  position: relative;
+}
+#projects .item {
+height: 500px;
+width: auto;
+
+
+}
+#projects .item img {
+  border-radius: 30px;
+}
+
+#projects .column .overlay{
+
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #5E7F9E ;
+  border-radius: 30px;
+}
+#projects .column .overlay:hover {
+  opacity: 0.95;
+  border-radius: 30px;
+}
+
+#projects .text h5, p{
+margin: 40px 30px 10px 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+height: auto;
+color: white;
+
+line-height: 1.6;
+}
+
+#projects .text h5 {
+  font-size: 40px;
+}
+
+#projects .text p {
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+
+/* 
+@media screen and (min-width: 992px) {
+  
+  #projects section {
+    padding: 25em 3em;
+  }
+  
+  
+  #projects h2 {
+    margin: 0px 0px 60px 0px;
+    font-size: 35px;
+}
+  #services .column {
+    flex: 33.33%;
+    max-width: 33.33%;
+  } 
+}
+*/
+
+
+
+
+/*PROJECTS END */
