@@ -112,12 +112,15 @@ flex-direction: row;
 gap: 50px;
 
 }
-#header .nav-bar .nav-list ul li a{ 
-  text-decoration: none;
-
+#header  ul  { 
+  list-style-type: none;
 
   color: white;
   font-size: 20px;
+}
+
+#header a {
+  
 }
 
 #hero {
@@ -331,6 +334,7 @@ text-transform: uppercase;
   font-size: 15px;
   margin-bottom: 50px;
   font-weight: 400;
+  color: black;
 }
 #about .column-left .about-img {
   height: 100%;
