@@ -119,10 +119,13 @@ gap: 50px;
   font-size: 20px;
 }
 
-#header a {
-  
+#header .nav-bar .nav-list ul a {
+  color: white;
 }
 
+#header .nav-bar .nav-list ul a:hover {
+  color: #88A5BD;
+}
 #hero {
   background-image: url(./imgs/sean-pollock-PhYq704ffdA-unsplash.jpg);
   background-size: cover;
@@ -599,7 +602,8 @@ justify-content: center;
 flex-wrap: wrap;
 
 gap: 100px; 
-margin-bottom: 50px;
+margin:0 5px 50px 5px;
+
 }
 #projects .column{
   position: relative;
@@ -683,6 +687,7 @@ line-height: 1.6;
 /*PROJECTS END */
 #contact {
   background-color: #88A5BD;
+  
 }
 #contact .contact h2 {
   font-size: 32px;
@@ -690,4 +695,96 @@ line-height: 1.6;
   border-bottom: 4px solid #5E7F9E ;
   padding-bottom: 7px;
   text-transform: uppercase;
+  text-align: center;
+  
+}
+
+#contact .row{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 80%;
+  gap: 55px;
+
+}
+
+#contact .column .info h3, p {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  justify-content: flex-start;
+  margin: 0;
+  font-size: 25px;
+ 
+}
+
+
+
+#contact .column .contact-form{
+/* margin: 0px 0px 0px -300px; */
+display: flex;
+flex-direction: column;
+justify-content: center;
+
+  gap: 25px;
+}
+
+#contact .inputs label {
+  font-size: 20px;
+  color: white;
+}
+
+#contact  input[type=text] {
+  width: 100%;
+  padding: 12px 15px;
+  margin: 8px 0;
+
+ 
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+#contact .inputs [type=submit]{
+  width: 100%;
+color: white;
+padding: 14px 20px;
+margin: 8px 0;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+background-color:#5E7F9E;
+}
+#contact .inputs [type=submit]:hover {
+    background-color: #19222A;
+    color: white;
+    transition: 0.3s;
+}
+
+
+@media screen and (min-width: 768px) {
+  #contact .row{
+    
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
+  }
+  #contact .row .column{
+    width: 60%;
+  }
+}
+
+
+@media screen and (min-width: 992px) {
+  
+  #contact .row{
+    
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
+  }
+  #contact .row .column{
+    width: 60%;
+  }
+
 }
