@@ -709,13 +709,14 @@ line-height: 1.6;
 }
 
 #contact .column .info h3, p {
-  display: flex;
+  /* display: flex;
   flex-direction: row;
-  gap: 30px;
-  justify-content: flex-start;
-  margin: 0;
+
+  justify-content: flex-start; */
+  margin: 0 0 0 30px;
   font-size: 25px;
- 
+ display: inline;
+ line-height: 70px;
 }
 
 
