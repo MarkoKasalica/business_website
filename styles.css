@@ -708,7 +708,8 @@ line-height: 1.6;
 
 }
 
-#contact .column .info h3, p {
+
+#contact .column .info .text-h3, .text-p{
   /* display: flex;
   flex-direction: row;
 
@@ -716,7 +717,7 @@ line-height: 1.6;
   margin: 0 0 0 30px;
   font-size: 25px;
  display: inline;
- line-height: 70px;
+ line-height: 100px;
 }
 
 
