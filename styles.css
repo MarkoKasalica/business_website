@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@200;300;400;500&display=swap');
 * {
   box-sizing: border-box;
   padding: 0;
@@ -107,23 +107,23 @@ p {
 }
 
 #header .nav-list ul {
-  /* list-style: none; */
-  position: absolute;
-  background-color:#19222A;
-  width: 100vw;
-  height: 70vh;
-  left: 0;
-  bottom: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  z-index: 1;
-  overflow-x: hidden;
-  transition: 1s ease bottom;
+ /* list-style: none; */
+ position: absolute;
+ background-color: rgb(31, 30, 30);
+ width: 100vw;
+ height: 100vh;
+ left: 100%;
+ top: 0;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ z-index: 1;
+ overflow-x: hidden;
+ transition: 0.5s ease left;
 }
 #header .nav-list ul.active {
-  top: 0%;
+ left: 0;
 }
 #header .nav-list ul a {
   font-size: 2.5rem;
@@ -136,10 +136,7 @@ p {
   display: block;
 }
 
-#header .nav-list ul li:hover a::after {
-  transform: translate(-50%, -50%) scale(1);
-  letter-spacing: initial;
-}
+
 #header .nav-list ul li:hover a {
   color: #5E7F9E;
 }
@@ -148,29 +145,18 @@ p {
   height: 60px;
   width: 60px;
   display: inline-block;
-  border: 3px solid #19222A;
-  border-radius: 50%;
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   z-index: 100;
   cursor: pointer;
-  /* transform: scale(0.8); */
   margin-right: 20px;
 }
-#header .hamburger:after {
-  position: absolute;
-  content: "";
-  height: 100%;
-  width: 100%;
-  border-radius: 50%;
-  border: 3px solid rgb(255, 255, 255);
-  animation: hamburger_puls 1s ease infinite;
-}
+
 #header .hamburger .bar {
   height: 3px;
-  width: 30px;
+  width: 12px;
   position: relative;
   background-color: white;
   z-index: -1;
@@ -187,10 +173,10 @@ p {
   transition-property: top, bottom;
 }
 #header .hamburger .bar::after {
-  top: 8px;
+  top: 10px;
 }
 #header .hamburger .bar::before {
-  bottom: 8px;
+  bottom: 10px;
 }
 #header .hamburger.active .bar::before {
   bottom: 0;
