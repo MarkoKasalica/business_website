@@ -189,7 +189,11 @@ i {
 #header .hamburger.active .bar::after {
   top: 0;
 }
-
+@media only screen and (max-width: 450px) {
+  #header .hamburger {
+    margin-right: 5px;
+  }
+}
 @media only screen and (min-width: 1200px) {
   /* header */
   #header .hamburger {
@@ -300,6 +304,14 @@ https://www.canva.com/colors/color-palette-generator/
   }
 }
 
+@media only screen and (max-width: 450px) {
+  #hero h1 {
+    font-size: 2.5rem;
+  }
+  #hero p {
+    font-size: 1.5rem;
+  }
+}
 /* END OF HERO SECTION */
 
 /* ************ */
@@ -841,6 +853,7 @@ width: 100%;  justify-content: flex-start; */
 
   font-size: 30px;
   display: flex;
+  flex-wrap: wrap;
   gap: 50px;
   color: #5e7f9e;
 }
